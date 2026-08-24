@@ -160,7 +160,7 @@ const faqs = [
     },
     {
         question: "What's your response time for inquiries?",
-        answer: "WhatsApp inquiries are typically answered within 30 minutes. Email inquiries within 4 hours. We're available 6 AM – 10 PM IST every day."
+        answer: "WhatsApp inquiries are typically answered within 24 hours. Email inquiries within 24 hours. We're available 6 AM – 10 PM IST every day."
     }
 ];
 
