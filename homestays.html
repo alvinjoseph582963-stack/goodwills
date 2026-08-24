@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="assets/logo/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/logo/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Moolankavu Family Homestay, Wayanad, Kerala. Authentic family homestay in the lush forests of Wayanad. Book with Goodwill Holidays." />
+    <meta name="keywords" content="Moolankavu homestay, Wayanad family homestay, Kerala homestay, family stay Wayanad" />
+    <meta name="author" content="Goodwill Holidays" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.goodwillholidays.in/homestays.html" />
+    <meta property="og:title" content="Moolankavu Family Homestay – Wayanad | Goodwill Holidays" />
+    <meta property="og:description" content="Authentic family homestay in the lush forests of Moolankavu, Wayanad, Kerala." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.goodwillholidays.in/homestays.html" />
+    <meta property="og:image" content="https://www.goodwillholidays.in/assets/images/homestay.jpg" />
+    <title>Moolankavu Family Homestay – Wayanad Kerala | Goodwill Holidays</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <style>
+        /* ── Homestay Hero ── */
+        .hs-hero {
+            position: relative;
+            height: 70vh;
+            min-height: 480px;
+            overflow: hidden;
+        }
+        .hs-hero__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .hs-hero__overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(15,41,24,0.2) 0%, rgba(15,41,24,0.65) 100%);
+        }
+        .hs-hero__content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 2.5rem;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        .hs-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: rgba(22,163,74,0.95);
+            color: #fff;
+            padding: 0.35rem 1rem;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            margin-bottom: 0.75rem;
+        }
+        .hs-hero__title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            color: #ffffff;
+            line-height: 1.15;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 2px 12px rgba(0,0,0,0.3);
+        }
+        .hs-hero__sub {
+            color: rgba(255,255,255,0.88);
+            font-size: 1.05rem;
+            font-weight: 400;
+        }
+
+        /* ── Info Cards ── */
+        .hs-info-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+        @media (max-width: 860px) {
+            .hs-info-grid { grid-template-columns: 1fr; }
+        }
+        .hs-card {
+            background: #fff;
+            border: 1px solid var(--clr-border);
+            border-radius: var(--radius-xl);
+            padding: 2rem;
+            box-shadow: var(--shadow-md);
+        }
+        .hs-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.35rem;
+            color: var(--clr-text-primary);
+            margin-bottom: 1rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid var(--clr-bg-secondary);
+        }
+        .amenity-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 0.6rem;
+            margin-top: 0.75rem;
+        }
+        .amenity-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--clr-bg-secondary);
+            border: 1px solid var(--clr-border);
+            border-radius: var(--radius-md);
+            padding: 0.5rem 0.8rem;
+            font-size: 0.82rem;
+            font-weight: 500;
+            color: var(--clr-text-secondary);
+        }
+        .amenity-item::before {
+            content: '✓';
+            color: var(--clr-brand);
+            font-weight: 700;
+        }
+        .nearby-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .nearby-list li {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--clr-bg-secondary);
+            font-size: 0.875rem;
+            color: var(--clr-text-secondary);
+        }
+        .nearby-list li:last-child { border-bottom: none; }
+        .nearby-list li::before { content: '📍'; font-size: 0.9rem; }
+        .rules-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .rules-list li {
+            padding: 0.4rem 0;
+            font-size: 0.875rem;
+            color: var(--clr-text-secondary);
+            border-bottom: 1px solid var(--clr-bg-secondary);
+        }
+        .rules-list li:last-child { border-bottom: none; }
+        .rules-list li::before { content: '· '; color: var(--clr-brand); font-weight: 700; }
+
+        /* ── Highlights ── */
+        .hs-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+        .hs-highlight-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: var(--clr-brand-glow);
+            border: 1px solid rgba(22,163,74,0.2);
+            color: var(--clr-brand-dark);
+            border-radius: 999px;
+            padding: 0.4rem 1rem;
+            font-size: 0.82rem;
+            font-weight: 600;
+        }
+        .hs-highlight-chip::before { content: '🌿'; }
+
+        /* ── Booking CTA card ── */
+        .hs-booking-card {
+            background: linear-gradient(135deg, var(--clr-brand) 0%, var(--clr-brand-dark) 100%);
+            border-radius: var(--radius-xl);
+            padding: 2rem 1.75rem;
+            color: #fff;
+            box-shadow: var(--shadow-brand);
+            position: sticky;
+            top: 92px;
+        }
+        .hs-booking-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+        .hs-booking-card p {
+            opacity: 0.88;
+            font-size: 0.875rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        .hs-booking-card .btn--ghost {
+            background: rgba(255,255,255,0.15);
+            border-color: rgba(255,255,255,0.4);
+            color: #fff;
+        }
+        .hs-booking-card .btn--ghost:hover {
+            background: rgba(255,255,255,0.25);
+            border-color: #fff;
+        }
+        .hs-contact-info {
+            margin-top: 1.25rem;
+            padding-top: 1.25rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+        .hs-contact-info p {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.4rem;
+            font-size: 0.875rem;
+            opacity: 1;
+        }
+        .hs-meta-row {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+        .hs-meta-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+        }
+        .hs-meta-item span:first-child {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--clr-text-muted);
+            font-weight: 600;
+        }
+        .hs-meta-item span:last-child {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--clr-text-primary);
+        }
+
+        /* ── Destination Gallery ── */
+        .dest-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 290px;
+            gap: 1.5rem;
+        }
+        @media (max-width: 860px) {
+            .dest-gallery {
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: 240px;
+            }
+        }
+        @media (max-width: 540px) {
+            .dest-gallery {
+                grid-template-columns: 1fr;
+                grid-auto-rows: 220px;
+            }
+        }
+        .dest-card {
+            border-radius: var(--radius-2xl);
+            overflow: hidden;
+            position: relative;
+            height: 100%;
+            width: 100%;
+            cursor: pointer;
+            box-shadow: var(--shadow-md);
+        }
+        .dest-card:nth-child(1) { grid-column: span 2; }
+        .dest-card:nth-child(4) { grid-column: span 2; }
+        .dest-card:nth-child(5) { grid-column: span 2; }
+        @media (max-width: 860px) {
+            .dest-card:nth-child(1),
+            .dest-card:nth-child(4),
+            .dest-card:nth-child(5) { grid-column: span 2; }
+        }
+        @media (max-width: 540px) {
+            .dest-card:nth-child(1),
+            .dest-card:nth-child(4),
+            .dest-card:nth-child(5) { grid-column: span 1; }
+        }
+        .dest-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.45s ease;
+            display: block;
+        }
+        .dest-card:hover img { transform: scale(1.06); }
+        .dest-card__label {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1.5rem 1rem 0.85rem;
+            background: linear-gradient(to top, rgba(15,41,24,0.85) 0%, transparent 100%);
+            color: #fff;
+        }
+        .dest-card__name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            display: block;
+        }
+        .dest-card__state {
+            font-size: 0.75rem;
+            opacity: 0.8;
+            letter-spacing: 0.04em;
+        }
+    </style>
+</head>
+<body data-page="homestays">
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+
+    <!-- ═══ NAVBAR ═══════════════════════════════════════════════════════════ -->
+    <header role="banner">
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="navbar__inner">
+                <a href="index.html" class="navbar__logo" aria-label="Goodwill Holidays – Home">
+                    <img src="assets/logo/logo.png" alt="Goodwill Holidays Logo" class="navbar__logo-img" width="44" height="44" />
+                    <div class="navbar__logo-text">
+                        <span class="navbar__logo-name">Goodwill Holidays</span>
+                        <span class="navbar__logo-tagline">Taxi Service</span>
+                    </div>
+                </a>
+                <div class="navbar__nav" role="navigation">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="airport-transfer.html" class="nav-link">Airport Transfer</a>
+                    <a href="homestays.html" class="nav-link active">Homestays</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="mobile-menu-overlay" aria-hidden="true"></div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" aria-hidden="true">
+        <div class="mobile-menu__header">
+            <a href="index.html" class="navbar__logo">
+                <img src="assets/logo/logo.png" alt="Goodwill Holidays" class="navbar__logo-img" width="36" height="36" />
+                <div class="navbar__logo-text">
+                    <span class="navbar__logo-name">Goodwill Holidays</span>
+                    <span class="navbar__logo-tagline">Taxi Service</span>
+                </div>
+            </a>
+            <button class="mobile-menu-close" aria-label="Close navigation menu">✕</button>
+        </div>
+        <div class="mobile-menu__nav">
+            <a href="index.html" class="mobile-nav-link">🏠 Home</a>
+            <a href="airport-transfer.html" class="mobile-nav-link">✈️ Airport Transfer</a>
+            <a href="homestays.html" class="mobile-nav-link">🏡 Homestays</a>
+            <a href="contact.html" class="mobile-nav-link">📞 Contact Us</a>
+        </div>
+        <div class="mobile-menu__footer">
+            <a href="#" class="btn btn--whatsapp btn--full"
+               data-whatsapp="Hello Goodwill Holidays! I'd like to book the Moolankavu homestay!">
+                WhatsApp Us
+            </a>
+        </div>
+    </nav>
+
+    <main id="main-content">
+
+        <!-- ═══ HOMESTAY HERO ════════════════════════════════════════════════ -->
+        <div class="hs-hero">
+            <img src="assets/images/homestay.webp" alt="Moolankavu Family Homestay, Wayanad Kerala" class="hs-hero__img" fetchpriority="high" />
+            <div class="hs-hero__overlay"></div>
+            <div class="hs-hero__content">
+                <div class="breadcrumb" style="margin-bottom:0.75rem;">
+                    <a href="index.html" style="color:rgba(255,255,255,0.75);">Home</a>
+                    <span class="breadcrumb-separator" style="color:rgba(255,255,255,0.5);">›</span>
+                    <span style="color:#fff;">Homestays</span>
+                </div>
+                <div class="hs-badge">👨‍👩‍👧‍👦 Family Friendly Only</div>
+                <h1 class="hs-hero__title">Moolankavu Family Homestay</h1>
+                <p class="hs-hero__sub">📍 Moolankavu, Wayanad, Kerala  &nbsp;·&nbsp; Authentic Kerala Experience</p>
+            </div>
+        </div>
+
+        <!-- ═══ HOMESTAY DETAILS ══════════════════════════════════════════════ -->
+        <section class="section section--tight">
+            <div class="container">
+                <div class="hs-info-grid">
+
+                    <!-- LEFT: Details -->
+                    <div style="display:flex; flex-direction:column; gap:1.5rem;">
+
+                        <!-- Meta Row -->
+                        <div class="hs-card">
+                            <div class="hs-meta-row">
+                                <div class="hs-meta-item">
+                                    <span>Guests</span>
+                                    <span>👥 Up to 8</span>
+                                </div>
+                                <div class="hs-meta-item">
+                                    <span>Bedrooms</span>
+                                    <span>🛏 4 Rooms</span>
+                                </div>
+                                <!-- <div class="hs-meta-item">
+                                    <span>Location</span>
+                                    <span>🌿 Wayanad Forest</span>
+                                </div> -->
+                                <div class="hs-meta-item">
+                                    <span>Family</span>
+                                    <span>✅ Families Only</span>
+                                </div>
+                            </div>
+
+                            <!-- Highlights -->
+                            <!-- <div class="hs-highlights">
+                                <span class="hs-highlight-chip">Authentic Wayanad forest setting</span>
+                                <span class="hs-highlight-chip">Traditional Kerala wooden home</span>
+                                <span class="hs-highlight-chip">Coffee &amp; pepper plantation walks</span>
+                                <span class="hs-highlight-chip">Family-run with warm hospitality</span>
+                            </div> -->
+
+                            <h3>About This Homestay</h3>
+                            <p style="color:var(--clr-text-secondary); line-height:1.8; font-size:0.95rem;">
+                                A warm, authentic family homestay nestled in the serene village of Moolankavu, deep in the lush forests of Wayanad, Kerala. Surrounded by coffee and pepper plantations, with the gentle sounds of the forest all around, this is the perfect retreat for families seeking a genuine Kerala experience.
+                            </p>
+                            <p style="color:var(--clr-text-secondary); line-height:1.8; font-size:0.95rem; margin-top:0.75rem;">
+                                Wake up to mist-covered hills, enjoy home-cooked Kerala meals, and take guided walks through the plantation with your hosts. This is not a hotel — it's a home, and you'll be welcomed as family.
+                            </p>
+                        </div>
+
+                        <!-- Amenities -->
+                        <div class="hs-card">
+                            <h3>What's Included</h3>
+                            <div class="amenity-grid">
+                                <div class="amenity-item">Home-cooked Meals</div>
+                                <!-- <div class="amenity-item">Forest View Rooms</div> -->
+                                <div class="amenity-item">Nature Walks</div>
+                                <!-- <div class="amenity-item">Coffee Plantation Tour</div> -->
+                                <div class="amenity-item">Free Parking</div>
+                                <!-- <div class="amenity-item">Evening Campfire</div> -->
+                                <!-- <div class="amenity-item">Bird Watching</div> -->
+                                <div class="amenity-item">Traditional Architecture</div>
+                            </div>
+                        </div>
+
+                        <!-- House Rules -->
+                        <div class="hs-card">
+                            <h3>House Rules</h3>
+                            <ul class="rules-list">
+                                <!-- <li>Check-in: 12 Noon</li>
+                                <li>Check-out: 11 AM</li> -->
+                                <li>Families with children are welcome</li>
+                                <li>No smoking indoors</li>
+                                <li>Please respect local customs and nature</li>
+                            </ul>
+                        </div>
+
+                        <!-- Nearby -->
+                        <div class="hs-card">
+                            <h3>Nearby Attractions</h3>
+                            <ul class="nearby-list">
+                                <li>Moolankavu Devi Temple (0.5 km)</li>
+                                <li>Chembra Peak (22 km)</li>
+                                <li>Edakkal Caves (18 km)</li>
+                                <li>Pookode Lake (20 km)</li>
+                                <li>Soochipara Waterfalls (28 km)</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <!-- RIGHT: Booking CTA -->
+                    <div>
+                        <div class="hs-booking-card">
+                            <h3>Book This Homestay</h3>
+                            <p>Contact us directly to check availability and plan your family stay at Moolankavu. We'll guide you through everything.</p>
+                            <a href="#" class="btn btn--full"
+                               style="background:#25d366; color:#fff; border-color:#25d366; margin-bottom:0.75rem;"
+                               data-whatsapp="Hello Goodwill Holidays! 🏡 I'd like to book the Moolankavu Family Homestay in Wayanad. Please share availability details. Thank you!">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                WhatsApp to Book
+                            </a>
+                            <a href="tel:+919747790799" class="btn btn--ghost btn--full">
+                                📞 Call +91 97477 90799
+                            </a>
+                            <div class="hs-contact-info">
+                                <p>📍 Moolankavu, Wayanad, Kerala</p>
+                                <p>🕐 Available: Mon–Sun, 6AM–10PM</p>
+                                <p>👨‍👩‍👧‍👦 Family Bookings Only</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ WHY STAY WITH US ══════════════════════════════════════════════ -->
+        <section class="section section--dark" aria-labelledby="why-heading">
+            <div class="container">
+                <div class="section-header section-header--center">
+                    <span class="section-label">The Goodwill Experience</span>
+                    <h2 class="section-title" id="why-heading">Why Stay at <span>Moolankavu</span></h2>
+                </div>
+                <div class="why-bento" style="grid-template-columns:repeat(auto-fit,minmax(230px,1fr));">
+                    <div class="why-card reveal">
+                        <div class="why-card__icon">🌿</div>
+                        <h3 class="why-card__title">Pure Nature</h3>
+                        <p class="why-card__desc">Wake up to bird song, mist-covered hills, and the fresh scent of coffee blossoms — true Wayanad wilderness.</p>
+                    </div>
+                    <div class="why-card reveal" data-delay="100">
+                        <div class="why-card__icon">🥘</div>
+                        <h3 class="why-card__title">Home-cooked Meals</h3>
+                        <p class="why-card__desc">Savor authentic Kerala meals — appam, puttu, fish curry — prepared fresh by your host family every day.</p>
+                    </div>
+                    <div class="why-card reveal" data-delay="200">
+                        <div class="why-card__icon">👨‍👩‍👧‍👦</div>
+                        <h3 class="why-card__title">Families Welcome</h3>
+                        <p class="why-card__desc">Thoughtfully designed for families — safe surroundings, spacious rooms, and activities everyone will love.</p>
+                    </div>
+                    <div class="why-card reveal" data-delay="300">
+                        <div class="why-card__icon">🤝</div>
+                        <h3 class="why-card__title">Local Hosts</h3>
+                        <p class="why-card__desc">Your hosts are lifelong Moolankavu residents who know every trail, every story, and every secret of the forest.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ═══ FAQ ══════════════════════════════════════════════════════════ -->
+        <section class="section section--dark" aria-labelledby="faq-heading">
+            <div class="container container--narrow">
+                <div class="section-header section-header--center">
+                    <span class="section-label">Questions?</span>
+                    <h2 class="section-title" id="faq-heading">Homestay <span>FAQs</span></h2>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-hs-1">
+                            Is this homestay suitable for children?
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" id="faq-hs-1" role="region">
+                            <p>Yes! The Moolankavu Family Homestay is designed exclusively for families. The surroundings are safe, the hosts are experienced with children, and there are plenty of nature activities that kids love — like plantation walks, campfires, and bird watching.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-hs-2">
+                            What kind of meals are served?
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" id="faq-hs-2" role="region">
+                            <p>You'll enjoy authentic home-cooked Kerala meals — appam, puttu, idiyappam for breakfast; rice, fish curry, sambar, and fresh vegetables for lunch and dinner. Vegetarian options are always available. Please inform us of any dietary restrictions in advance.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-hs-3">
+                            How do I book? Is online payment available?
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" id="faq-hs-3" role="region">
+                            <p>Just WhatsApp or call us at +91 97477 90799 to check availability and make a booking. We keep the process simple and personal — no complicated forms, no hidden fees. We'll discuss your dates, group size, and confirm your stay directly.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-hs-4">
+                            Can we arrange a taxi for local sightseeing during our stay?
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" id="faq-hs-4" role="region">
+                            <p>Absolutely! We can arrange a dedicated vehicle and driver for local trips from Moolankavu to nearby attractions like Edakkal Caves, Chembra Peak, and Pookode Lake during your stay.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ═══ FOOTER ══════════════════════════════════════════════════════════ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo" aria-label="Goodwill Holidays home">
+                        <img src="assets/logo/logo.png" alt="Goodwill Holidays" class="footer__logo-img" width="48" height="48" loading="lazy" />
+                        <div class="footer__logo-text">
+                            <span class="footer__logo-name">Goodwill Holidays</span>
+                            <span class="footer__logo-tagline">Taxi Service</span>
+                        </div>
+                    </a>
+                    <p class="footer__desc">Premium taxi service across Kerala and South India. Making travel beautiful, safe, and unforgettable.</p>
+                    <div class="footer__social" aria-label="Social media links">
+                        <a href="#" class="footer__social-link" aria-label="Facebook" rel="noopener noreferrer">f</a>
+                        <a href="#" class="footer__social-link" aria-label="Instagram" rel="noopener noreferrer">in</a>
+                        <a href="#" class="footer__social-link" aria-label="YouTube" rel="noopener noreferrer">▶</a>
+                        <a href="#" class="footer__social-link" aria-label="Twitter / X" rel="noopener noreferrer">𝕏</a>
+                    </div>
+                </div>
+                <nav aria-label="Services links">
+                    <div class="footer__col-title">Services</div>
+                    <div class="footer__links">
+                        <a href="airport-transfer.html" class="footer__link">✈️ Airport Transfer</a>
+                        <a href="homestays.html" class="footer__link">🏡 Homestays</a>
+                        <a href="contact.html" class="footer__link">🚗 Taxi Service</a>
+                    </div>
+                </nav>
+                <div>
+                    <div class="footer__col-title">Contact Us</div>
+                    <div class="footer__links">
+                        <div class="footer__contact-item">
+                            <span class="footer__contact-icon" aria-hidden="true">📞</span>
+                            <a href="tel:+919747790799" class="footer__link" style="transform:none;">+91 97477 90799</a>
+                        </div>
+                        <div class="footer__contact-item">
+                            <span class="footer__contact-icon" aria-hidden="true">💬</span>
+                            <a href="#" class="footer__link" style="transform:none;"
+                               data-whatsapp="Hello Goodwill Holidays! I'd like to inquire about your travel services.">
+                                WhatsApp Us
+                            </a>
+                        </div>
+                        <div class="footer__contact-item">
+                            <span class="footer__contact-icon" aria-hidden="true">📍</span>
+                            <span>Wayanad, Kerala, India</span>
+                        </div>
+                        <div class="footer__contact-item">
+                            <span class="footer__contact-icon" aria-hidden="true">🕐</span>
+                            <span>Mon–Sun: 6:00 AM – 10:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© <span id="footer-year">2025</span> Goodwill Holidays. All rights reserved.</p>
+                <div class="footer__legal">
+                    <a href="contact.html">Privacy Policy</a>
+                    <a href="contact.html">Terms of Service</a>
+                    <a href="sitemap.xml">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+
+    <a href="#" class="whatsapp-float"
+       data-whatsapp="Hello Goodwill Holidays! I'd like to enquire about the Moolankavu Family Homestay."
+       aria-label="Chat on WhatsApp">
+        <div class="whatsapp-float-tooltip">Book Homestay!</div>
+        <svg viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <div class="sticky-cta-mobile" aria-label="Quick booking actions">
+        <a href="tel:+919747790799" class="btn btn--ghost btn--sm">📞 Call</a>
+        <a href="#" class="btn btn--whatsapp btn--sm"
+           data-whatsapp="Hello Goodwill Holidays! I'd like to book the Moolankavu homestay!">
+            WhatsApp
+        </a>
+        <a href="contact.html" class="btn btn--primary btn--sm">Book Now</a>
+    </div>
+
+    <script src="js/config.js" defer></script>
+    <script src="js/data.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const yearEl = document.getElementById('footer-year');
+        if (yearEl) yearEl.textContent = new Date().getFullYear();
+    });
+    </script>
+</body>
+</html>

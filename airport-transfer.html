@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/logo/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Reliable airport taxi service in Kerala and South India. Punctual airport transfers from Kochi, Trivandrum, Calicut, and more with Goodwill Holidays." />
+    <meta name="keywords" content="airport transfer Kerala, taxi Kochi airport, Trivandrum airport taxi, airport pickup Kerala, Goodwill Holidays airport transfer" />
+    <meta name="author" content="Goodwill Holidays" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.goodwillholidays.in/airport-transfer.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Airport Transfer Kerala – Kochi, Trivandrum & More | Goodwill Holidays" />
+    <meta property="og:description" content="Reliable airport taxi service in Kerala and South India. Punctual airport transfers with Goodwill Holidays." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.goodwillholidays.in/airport-transfer.html" />
+    <meta property="og:image" content="https://www.goodwillholidays.in/assets/images/airport.jpg" />
+    <meta property="og:site_name" content="Goodwill Holidays" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Airport Transfer Kerala – Kochi, Trivandrum & More" />
+    <meta name="twitter:description" content="Reliable airport taxi service in Kerala and South India. Punctual airport transfers with Goodwill Holidays." />
+    <meta name="twitter:image" content="https://www.goodwillholidays.in/assets/images/airport.jpg" />
+
+    <title>Airport Transfer Kerala – Kochi, Trivandrum & More | Goodwill Holidays</title>
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TaxiService",
+        "name": "Goodwill Holidays Airport Transfers",
+        "description": "Reliable airport taxi service in Kerala and South India.",
+        "url": "https://www.goodwillholidays.in/airport-transfer.html",
+        "telephone": "+919747790799",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Goodwill Holidays"
+        },
+        "areaServed": [
+            {"@type": "City", "name": "Kochi"},
+            {"@type": "City", "name": "Trivandrum"},
+            {"@type": "City", "name": "Calicut"},
+            {"@type": "City", "name": "Coimbatore"},
+            {"@type": "City", "name": "Bangalore"},
+            {"@type": "City", "name": "Chennai"}
+        ]
+    }
+    </script>
+    <style>
+        .airport-page-layout { display: grid; grid-template-columns: 1fr 1.5fr; gap: 3rem; align-items: start; }
+        @media (max-width: 991px) { .airport-page-layout { grid-template-columns: 1fr; } }
+        .vehicle-selection { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 0.5rem; }
+        .vehicle-card { border: 2px solid transparent; border-radius: 0.5rem; padding: 1rem; cursor: pointer; text-align: center; background: rgba(255,255,255,0.05); transition: all 0.3s; }
+        .vehicle-card.selected { border-color: var(--clr-brand); background: rgba(34, 197, 94, 0.1); }
+        .vehicle-card h4 { margin-bottom: 0.25rem; font-size: 0.9rem; }
+        .vehicle-card p { font-size: 0.75rem; color: var(--clr-text-muted); margin: 0; }
+        .vehicle-list-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+        .vehicle-info-card { background: var(--clr-bg-card); border-radius: 1rem; padding: 1.5rem; border: 1px solid rgba(255,255,255,0.05); }
+    </style>
+</head>
+<body data-page="airport-transfer">
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+
+    <!-- ═══ NAVBAR ═════════════════════════════════════════════════════════ -->
+    <header role="banner">
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="navbar__inner">
+                <a href="index.html" class="navbar__logo" aria-label="Goodwill Holidays – Home">
+                    <img src="assets/logo/logo.png" alt="Goodwill Holidays Logo" class="navbar__logo-img" width="44" height="44" />
+                    <div class="navbar__logo-text">
+                        <span class="navbar__logo-name">Goodwill Holidays</span>
+                        <span class="navbar__logo-tagline">Taxi Service</span>
+                    </div>
+                </a>
+
+                <div class="navbar__nav" role="navigation">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="airport-transfer.html" class="nav-link active">Airport Transfer</a>
+                    <a href="homestays.html" class="nav-link">Homestays</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+
+
+                <!-- Hamburger -->
+                <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" aria-hidden="true"></div>
+
+    <!-- Mobile Menu -->
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" aria-hidden="true">
+        <div class="mobile-menu__header">
+            <a href="index.html" class="navbar__logo">
+                <img src="assets/logo/logo.png" alt="Goodwill Holidays" class="navbar__logo-img" width="36" height="36" />
+                <div class="navbar__logo-text">
+                    <span class="navbar__logo-name">Goodwill Holidays</span>
+                    <span class="navbar__logo-tagline">Taxi Service</span>
+                </div>
+            </a>
+            <button class="mobile-menu-close" aria-label="Close navigation menu">✕</button>
+        </div>
+        <div class="mobile-menu__nav">
+            <a href="index.html" class="mobile-nav-link">🏠 Home</a>
+            <a href="airport-transfer.html" class="mobile-nav-link active">✈️ Airport Transfer</a>
+            <a href="homestays.html" class="mobile-nav-link">🏡 Homestays</a>
+            <a href="contact.html" class="mobile-nav-link">📞 Contact Us</a>
+        </div>
+        <div class="mobile-menu__footer">
+            <a href="#" class="btn btn--whatsapp btn--full"
+               data-whatsapp="Hello Goodwill Holidays! I'd like to plan a trip!">
+                WhatsApp Us
+            </a>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- ═══ PAGE HEADER ═══════════════════════════════════════════════════ -->
+        <section class="page-header section--dark">
+            <div class="container">
+                <nav aria-label="Breadcrumb" class="breadcrumb">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li><span aria-current="page">Airport Transfer</span></li>
+                    </ol>
+                </nav>
+                <div class="page-header__content text-center">
+                    <h1 class="page-header__title">Airport Pickup &amp; <span>Drop Service</span></h1>
+                    <p class="page-header__subtitle">Reliable, 24/7 on-time airport taxi transfers across all major airports in Kerala, Tamil Nadu, and Karnataka.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ MAIN CONTENT ═════════════════════════════════════════════════ -->
+        <section class="section">
+            <div class="container">
+                <div class="airport-page-layout">
+                    <!-- LEFT COLUMN: Form -->
+                    <div class="reveal-left">
+                        <form id="airport-transfer-form" class="airport-transfer-form">
+                            <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem; font-family: 'Playfair Display', serif; color: var(--clr-text-primary);">Book Your Transfer</h2>
+                            
+                            <div class="form-group" style="margin-bottom: 1.25rem;">
+                                <label for="transfer-pickup" class="form-label" style="font-weight:600; margin-bottom:0.4rem; display:block;">Pickup Location *</label>
+                                <input type="text" id="transfer-pickup" class="form-input" required placeholder="e.g. Kochi Airport (COK), Calicut Airport..." style="padding: 0.85rem 1rem; border-radius: var(--radius-md); border: 1px solid var(--clr-border); background: #ffffff; color: var(--clr-text-primary); font-size: 0.95rem;" />
+                            </div>
+                            
+                            <div class="form-group" style="margin-bottom: 1.25rem;">
+                                <label for="transfer-dropoff" class="form-label" style="font-weight:600; margin-bottom:0.4rem; display:block;">Drop Location *</label>
+                                <input type="text" id="transfer-dropoff" class="form-input" required placeholder="e.g. Munnar, Alleppey, Wayanad, Hotel name..." style="padding: 0.85rem 1rem; border-radius: var(--radius-md); border: 1px solid var(--clr-border); background: #ffffff; color: var(--clr-text-primary); font-size: 0.95rem;" />
+                            </div>
+
+                            <div class="form-grid-2">
+                                <div class="form-group">
+                                    <label for="transfer-date" class="form-label" style="font-weight:600; margin-bottom:0.4rem; display:block;">Date *</label>
+                                    <input type="date" id="transfer-date" class="form-input" required style="padding: 0.85rem 1rem; border-radius: var(--radius-md); border: 1px solid var(--clr-border); background: #ffffff; color: var(--clr-text-primary); font-size: 0.95rem;" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="transfer-time" class="form-label" style="font-weight:600; margin-bottom:0.4rem; display:block;">Flight / Pickup Time</label>
+                                    <input type="time" id="transfer-time" class="form-input" style="padding: 0.85rem 1rem; border-radius: var(--radius-md); border: 1px solid var(--clr-border); background: #ffffff; color: var(--clr-text-primary); font-size: 0.95rem;" />
+                                </div>
+                            </div>
+
+                            <div class="form-grid-2">
+                                <div class="form-group">
+                                    <label for="transfer-passengers" class="form-label" style="font-weight:600; margin-bottom:0.4rem; display:block;">Passengers</label>
+                                    <input type="number" id="transfer-passengers" class="form-input" min="1" max="15" value="2" style="padding: 0.85rem 1rem; border-radius: var(--radius-md); border: 1px solid var(--clr-border); background: #ffffff; color: var(--clr-text-primary); font-size: 0.95rem;" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="transfer-luggage" class="form-label" style="font-weight:600; margin-bottom:0.4rem; display:block;">Luggage</label>
+                                    <select id="transfer-luggage" class="form-input" style="padding: 0.85rem 1rem; border-radius: var(--radius-md); border: 1px solid var(--clr-border); background: #ffffff; color: var(--clr-text-primary); font-size: 0.95rem;">
+                                        <option value="0-1">0 – 1 Bags</option>
+                                        <option value="2-4" selected>2 – 4 Bags</option>
+                                        <option value="5+">5+ Bags</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group" style="margin-bottom: 1.5rem;">
+                                <label class="form-label" style="font-weight:600; margin-bottom:0.4rem; display:block;">Vehicle Preference</label>
+                                <div class="vehicle-selection">
+                                    <div class="vehicle-card selected" data-vehicle="sedan">
+                                        <div style="font-size: 1.5rem; margin-bottom: 0.25rem;">🚗</div>
+                                        <h4>AC Sedan</h4>
+                                        <p>Dzire / Etios (1-4 Pax)</p>
+                                    </div>
+                                    <div class="vehicle-card" data-vehicle="suv">
+                                        <div style="font-size: 1.5rem; margin-bottom: 0.25rem;">🚙</div>
+                                        <h4>AC SUV</h4>
+                                        <p>Innova / Crysta (5-7 Pax)</p>
+                                    </div>
+                                    <div class="vehicle-card" data-vehicle="tempo">
+                                        <div style="font-size: 1.5rem; margin-bottom: 0.25rem;">🚐</div>
+                                        <h4>Tempo Traveller</h4>
+                                        <p>Force Tempo (8-14 Pax)</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group" style="margin-bottom: 1.5rem;">
+                                <label for="transfer-notes" class="form-label" style="font-weight:600; margin-bottom:0.4rem; display:block;">Flight Number / Special Requests (Optional)</label>
+                                <textarea id="transfer-notes" class="form-input" rows="2" placeholder="e.g. Flight AI-420 landing at 10:30 AM, baby seat required..." style="padding: 0.85rem 1rem; border-radius: var(--radius-md); border: 1px solid var(--clr-border); background: #ffffff; color: var(--clr-text-primary); font-size: 0.95rem;"></textarea>
+                            </div>
+
+                            <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                                <button type="submit" class="btn btn--primary btn--full" style="justify-content: center; padding: 0.9rem;">
+                                    Request Booking via WhatsApp
+                                </button>
+                                <a href="tel:+919747790799" class="btn btn--outline btn--full" style="justify-content: center; padding: 0.8rem;">
+                                    📞 Call to Book: +91 97477 90799
+                                </a>
+                            </div>
+
+                            <p style="font-size: 0.78rem; color: var(--clr-text-muted); margin-top: 1.25rem; text-align: center; line-height: 1.5;">
+                                🛡️ <em>Fast confirmation within 30 minutes. Tolls, parking &amp; flight tracking included.</em>
+                            </p>
+                        </form>
+                    </div>
+
+                    <!-- RIGHT COLUMN: Info -->
+                    <div class="reveal-right">
+                        <div class="airport-info-card" style="background:#ffffff; border:1px solid var(--clr-border); border-radius:var(--radius-xl); box-shadow:var(--shadow-md); margin-bottom: 2rem;">
+                            <h2 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin-bottom: 1.25rem; color: var(--clr-text-primary);">Why Choose Our Transfer</h2>
+                            <ul style="display: flex; flex-direction: column; gap: 1.25rem; list-style:none; padding:0; margin:0;">
+                                <li style="display: flex; align-items: start; gap: 0.85rem;">
+                                    <span style="background:var(--clr-brand-glow); color:var(--clr-brand-dark); width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; flex-shrink:0;">✓</span>
+                                    <div>
+                                        <strong style="display: block; color: var(--clr-text-primary); font-size: 0.98rem;">Real-Time Flight Tracking</strong>
+                                        <span style="color: var(--clr-text-muted); font-size: 0.88rem;">We monitor your flight status in real time and automatically adjust pickup times if delayed.</span>
+                                    </div>
+                                </li>
+                                <li style="display: flex; align-items: start; gap: 0.85rem;">
+                                    <span style="background:var(--clr-brand-glow); color:var(--clr-brand-dark); width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; flex-shrink:0;">✓</span>
+                                    <div>
+                                        <strong style="display: block; color: var(--clr-text-primary); font-size: 0.98rem;">Meet &amp; Greet with Name Board</strong>
+                                        <span style="color: var(--clr-text-muted); font-size: 0.88rem;">Our professional driver waits right at the airport arrivals exit holding your personalized name board.</span>
+                                    </div>
+                                </li>
+                                <li style="display: flex; align-items: start; gap: 0.85rem;">
+                                    <span style="background:var(--clr-brand-glow); color:var(--clr-brand-dark); width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; flex-shrink:0;">✓</span>
+                                    <div>
+                                        <strong style="display: block; color: var(--clr-text-primary); font-size: 0.98rem;">100% Transparent All-Inclusive Pricing</strong>
+                                        <span style="color: var(--clr-text-muted); font-size: 0.88rem;">Toll gates, airport parking fees, and driver allowances are included. Zero hidden costs.</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="airport-info-card" style="background:#ffffff; border:1px solid var(--clr-border); border-radius:var(--radius-xl); box-shadow:var(--shadow-md); margin-bottom: 2rem;">
+                            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.4rem; margin-bottom: 1rem; color: var(--clr-text-primary);">Covered Airports</h3>
+                            <div style="display: flex; flex-wrap: wrap; gap: 0.6rem;">
+                                <span style="background: var(--clr-brand-glow); color: var(--clr-brand-dark); padding: 0.4rem 0.85rem; border-radius: 999px; font-size: 0.85rem; font-weight: 600;">✈️ Kochi (COK)</span>
+                                <span style="background: var(--clr-brand-glow); color: var(--clr-brand-dark); padding: 0.4rem 0.85rem; border-radius: 999px; font-size: 0.85rem; font-weight: 600;">✈️ Calicut (CCJ)</span>
+                                <span style="background: var(--clr-brand-glow); color: var(--clr-brand-dark); padding: 0.4rem 0.85rem; border-radius: 999px; font-size: 0.85rem; font-weight: 600;">✈️ Trivandrum (TRV)</span>
+                                <span style="background: var(--clr-brand-glow); color: var(--clr-brand-dark); padding: 0.4rem 0.85rem; border-radius: 999px; font-size: 0.85rem; font-weight: 600;">✈️ Kannur (CNN)</span>
+                                <span style="background: var(--clr-brand-glow); color: var(--clr-brand-dark); padding: 0.4rem 0.85rem; border-radius: 999px; font-size: 0.85rem; font-weight: 600;">✈️ Coimbatore (CJB)</span>
+                                <span style="background: var(--clr-brand-glow); color: var(--clr-brand-dark); padding: 0.4rem 0.85rem; border-radius: 999px; font-size: 0.85rem; font-weight: 600;">✈️ Bangalore (BLR)</span>
+                            </div>
+                        </div>
+
+                        <div style="background: #f0fdf4; border: 1px solid #bbf7d0; padding: 1.5rem; border-radius: var(--radius-xl); display:flex; align-items:flex-start; gap:1rem;">
+                            <div style="font-size: 1.75rem; line-height:1;">🕐</div>
+                            <div>
+                                <h4 style="font-size: 1.05rem; font-weight: 700; color: #166534; margin-bottom: 0.25rem;">24/7 Airport Transfer Service</h4>
+                                <p style="color: #374151; font-size: 0.88rem; line-height: 1.5; margin: 0;">Our desk is online <strong>6:00 AM – 10:00 PM</strong>, but pickups &amp; drops run <strong>around the clock, 24/7</strong> for confirmed bookings.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ HOW IT WORKS ════════════════════════════════════════════════ -->
+        <section class="section section--dark" aria-labelledby="how-heading">
+            <div class="container">
+                <div class="section-header section-header--center">
+                    <span class="section-label">Simple Process</span>
+                    <h2 class="section-title" id="how-heading">How It <span>Works</span></h2>
+                </div>
+
+                <div class="how-grid">
+                    <div class="how-step reveal" data-delay="0">
+                        <div class="how-step__number" aria-hidden="true">01</div>
+                        <h3 class="how-step__title">Request Transfer</h3>
+                        <p class="how-step__desc">Fill out the form with your travel details and submit it via WhatsApp or call us directly.</p>
+                    </div>
+                    <div class="how-step reveal" data-delay="150">
+                        <div class="how-step__number" aria-hidden="true">02</div>
+                        <h3 class="how-step__title">Get Confirmation</h3>
+                        <p class="how-step__desc">We will confirm availability, provide the exact fare, and share driver details before your journey.</p>
+                    </div>
+                    <div class="how-step reveal" data-delay="300">
+                        <div class="how-step__number" aria-hidden="true">03</div>
+                        <h3 class="how-step__title">Meet & Ride</h3>
+                        <p class="how-step__desc">Our driver will meet you at the airport arrivals with a name board and take you comfortably to your destination.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ═══ TESTIMONIALS (AIRPORT) ══════════════════════════════════════ -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header"
+                    style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1.5rem;">
+                    <div>
+                        <span class="section-label">Passenger Reviews</span>
+                        <h2 class="section-title">What <span>Travelers</span> Say</h2>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:0.75rem;">
+                        <button class="carousel-btn" id="airport-reviews-scroll-left" aria-label="Previous review"
+                            title="Previous review">‹</button>
+                        <button class="carousel-btn" id="airport-reviews-scroll-right" aria-label="Next review"
+                            title="Next review">›</button>
+                    </div>
+                </div>
+
+                <div class="stories-carousel-wrap">
+                    <div class="stories-carousel-track" id="airport-testimonial-container" aria-live="polite">
+                        <!-- Review 1 -->
+                        <article class="story-card reveal"
+                            style="background:#fff;border:1px solid var(--clr-border);border-radius:var(--radius-xl);padding:1.75rem;box-shadow:var(--shadow-md);display:flex;flex-direction:column;gap:1rem;">
+                            <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:0.5rem;">
+                                <div style="display:flex;align-items:center;gap:0.75rem;">
+                                    <div style="width:48px;height:48px;border-radius:50%;background:#16a34a;display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:#fff;font-weight:700;flex-shrink:0;">✈️</div>
+                                    <div>
+                                        <div style="font-weight:700;font-size:0.95rem;color:#1a2e1a;">Arjun Menon</div>
+                                        <div style="font-size:0.78rem;color:#6b7280;">📍 Kochi, Kerala</div>
+                                    </div>
+                                </div>
+                                <div style="color:#f59e0b;font-size:0.9rem;">★★★★★</div>
+                            </div>
+                            <blockquote
+                                style="margin:0;font-size:0.875rem;line-height:1.75;color:#374151;font-style:italic;border-left:3px solid #16a34a;padding-left:0.85rem;">
+                                "Our flight got delayed by almost 2 hours but the driver was tracking it live and was waiting right when we landed. Zero stress after a long journey."
+                            </blockquote>
+                            <div style="display:flex;justify-content:space-between;align-items:center;padding-top:0.75rem;border-top:1px solid #e5e7eb;flex-wrap:wrap;gap:0.25rem;">
+                                <span style="font-size:0.75rem;color:#6b7280;">🛬 Kochi Airport Pickup</span>
+                                <span style="font-size:0.72rem;color:#9ca3af;">March 2025</span>
+                            </div>
+                        </article>
+
+                        <!-- Review 2 -->
+                        <article class="story-card reveal"
+                            style="background:#fff;border:1px solid var(--clr-border);border-radius:var(--radius-xl);padding:1.75rem;box-shadow:var(--shadow-md);display:flex;flex-direction:column;gap:1rem;">
+                            <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:0.5rem;">
+                                <div style="display:flex;align-items:center;gap:0.75rem;">
+                                    <div style="width:48px;height:48px;border-radius:50%;background:#0369a1;display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:#fff;font-weight:700;flex-shrink:0;">👋</div>
+                                    <div>
+                                        <div style="font-weight:700;font-size:0.95rem;color:#1a2e1a;">Fatima &amp; Yusuf Ali</div>
+                                        <div style="font-size:0.78rem;color:#6b7280;">📍 Dubai, UAE</div>
+                                    </div>
+                                </div>
+                                <div style="color:#f59e0b;font-size:0.9rem;">★★★★★</div>
+                            </div>
+                            <blockquote
+                                style="margin:0;font-size:0.875rem;line-height:1.75;color:#374151;font-style:italic;border-left:3px solid #16a34a;padding-left:0.85rem;">
+                                "First trip to Kerala and we were a little anxious about arriving late at night. The driver held a name board, greeted us warmly, and had cold water bottles ready in the car."
+                            </blockquote>
+                            <div style="display:flex;justify-content:space-between;align-items:center;padding-top:0.75rem;border-top:1px solid #e5e7eb;flex-wrap:wrap;gap:0.25rem;">
+                                <span style="font-size:0.75rem;color:#6b7280;">🛬 Trivandrum Airport Pickup</span>
+                                <span style="font-size:0.72rem;color:#9ca3af;">February 2025</span>
+                            </div>
+                        </article>
+
+                        <!-- Review 3 -->
+                        <article class="story-card reveal"
+                            style="background:#fff;border:1px solid var(--clr-border);border-radius:var(--radius-xl);padding:1.75rem;box-shadow:var(--shadow-md);display:flex;flex-direction:column;gap:1rem;">
+                            <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:0.5rem;">
+                                <div style="display:flex;align-items:center;gap:0.75rem;">
+                                    <div style="width:48px;height:48px;border-radius:50%;background:#d97706;display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:#fff;font-weight:700;flex-shrink:0;">🌙</div>
+                                    <div>
+                                        <div style="font-weight:700;font-size:0.95rem;color:#1a2e1a;">Rajesh Iyer</div>
+                                        <div style="font-size:0.78rem;color:#6b7280;">📍 Chennai, Tamil Nadu</div>
+                                    </div>
+                                </div>
+                                <div style="color:#f59e0b;font-size:0.9rem;">★★★★★</div>
+                            </div>
+                            <blockquote
+                                style="margin:0;font-size:0.875rem;line-height:1.75;color:#374151;font-style:italic;border-left:3px solid #16a34a;padding-left:0.85rem;">
+                                "Booked a last-minute 4 AM drop to the airport. The car arrived 10 minutes early, spotlessly clean, and the driver was fully alert despite the early hour."
+                            </blockquote>
+                            <div style="display:flex;justify-content:space-between;align-items:center;padding-top:0.75rem;border-top:1px solid #e5e7eb;flex-wrap:wrap;gap:0.25rem;">
+                                <span style="font-size:0.75rem;color:#6b7280;">🛫 Kochi Airport Drop</span>
+                                <span style="font-size:0.72rem;color:#9ca3af;">January 2025</span>
+                            </div>
+                        </article>
+
+                        <!-- Review 4 -->
+                        <article class="story-card reveal"
+                            style="background:#fff;border:1px solid var(--clr-border);border-radius:var(--radius-xl);padding:1.75rem;box-shadow:var(--shadow-md);display:flex;flex-direction:column;gap:1rem;">
+                            <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:0.5rem;">
+                                <div style="display:flex;align-items:center;gap:0.75rem;">
+                                    <div style="width:48px;height:48px;border-radius:50%;background:#7c3aed;display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:#fff;font-weight:700;flex-shrink:0;">👨‍👩‍👧‍👦</div>
+                                    <div>
+                                        <div style="font-weight:700;font-size:0.95rem;color:#1a2e1a;">The Kapoor Family</div>
+                                        <div style="font-size:0.78rem;color:#6b7280;">📍 Delhi, India</div>
+                                    </div>
+                                </div>
+                                <div style="color:#f59e0b;font-size:0.9rem;">★★★★★</div>
+                            </div>
+                            <blockquote
+                                style="margin:0;font-size:0.875rem;line-height:1.75;color:#374151;font-style:italic;border-left:3px solid #16a34a;padding-left:0.85rem;">
+                                "Traveling with two kids and a mountain of luggage is never fun, but the Tempo Traveller was roomy and the driver helped load and unload everything without being asked."
+                            </blockquote>
+                            <div style="display:flex;justify-content:space-between;align-items:center;padding-top:0.75rem;border-top:1px solid #e5e7eb;flex-wrap:wrap;gap:0.25rem;">
+                                <span style="font-size:0.75rem;color:#6b7280;">🛬 Calicut Airport Pickup</span>
+                                <span style="font-size:0.72rem;color:#9ca3af;">December 2024</span>
+                            </div>
+                        </article>
+
+                        <!-- Review 5 -->
+                        <article class="story-card reveal"
+                            style="background:#fff;border:1px solid var(--clr-border);border-radius:var(--radius-xl);padding:1.75rem;box-shadow:var(--shadow-md);display:flex;flex-direction:column;gap:1rem;">
+                            <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:0.5rem;">
+                                <div style="display:flex;align-items:center;gap:0.75rem;">
+                                    <div style="width:48px;height:48px;border-radius:50%;background:#db2777;display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:#fff;font-weight:700;flex-shrink:0;">🌸</div>
+                                    <div>
+                                        <div style="font-weight:700;font-size:0.95rem;color:#1a2e1a;">Sarah Thompson</div>
+                                        <div style="font-size:0.78rem;color:#6b7280;">📍 Manchester, United Kingdom</div>
+                                    </div>
+                                </div>
+                                <div style="color:#f59e0b;font-size:0.9rem;">★★★★★</div>
+                            </div>
+                            <blockquote
+                                style="margin:0;font-size:0.875rem;line-height:1.75;color:#374151;font-style:italic;border-left:3px solid #16a34a;padding-left:0.85rem;">
+                                "First time in India and I was a little nervous about arriving alone. The pickup was so smooth and professional that it set a wonderful tone for the whole trip."
+                            </blockquote>
+                            <div style="display:flex;justify-content:space-between;align-items:center;padding-top:0.75rem;border-top:1px solid #e5e7eb;flex-wrap:wrap;gap:0.25rem;">
+                                <span style="font-size:0.75rem;color:#6b7280;">🛬 Trivandrum Airport Pickup</span>
+                                <span style="font-size:0.72rem;color:#9ca3af;">November 2024</span>
+                            </div>
+                        </article>
+
+                        <!-- Review 6 -->
+                        <article class="story-card reveal"
+                            style="background:#fff;border:1px solid var(--clr-border);border-radius:var(--radius-xl);padding:1.75rem;box-shadow:var(--shadow-md);display:flex;flex-direction:column;gap:1rem;">
+                            <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:0.5rem;">
+                                <div style="display:flex;align-items:center;gap:0.75rem;">
+                                    <div style="width:48px;height:48px;border-radius:50%;background:#0891b2;display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:#fff;font-weight:700;flex-shrink:0;">🚗</div>
+                                    <div>
+                                        <div style="font-weight:700;font-size:0.95rem;color:#1a2e1a;">Vivek Nair</div>
+                                        <div style="font-size:0.78rem;color:#6b7280;">📍 Bangalore, Karnataka</div>
+                                    </div>
+                                </div>
+                                <div style="color:#f59e0b;font-size:0.9rem;">★★★★★</div>
+                            </div>
+                            <blockquote
+                                style="margin:0;font-size:0.875rem;line-height:1.75;color:#374151;font-style:italic;border-left:3px solid #16a34a;padding-left:0.85rem;">
+                                "Used them for both pickup and drop across our whole Kerala trip. Always on time, always polite, and the fares matched exactly what was quoted on WhatsApp."
+                            </blockquote>
+                            <div style="display:flex;justify-content:space-between;align-items:center;padding-top:0.75rem;border-top:1px solid #e5e7eb;flex-wrap:wrap;gap:0.25rem;">
+                                <span style="font-size:0.75rem;color:#6b7280;">🛬🛫 Kochi Airport Pickup &amp; Drop</span>
+                                <span style="font-size:0.72rem;color:#9ca3af;">October 2024</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ CTA BANNER ═══════════════════════════════════════════════════ -->
+        <section class="section section--tight" aria-label="Call to action">
+            <div class="container">
+                <div class="cta-banner reveal-scale">
+                    <div class="cta-banner__glow" aria-hidden="true"></div>
+                    <h2 class="cta-banner__title">Need Immediate <span style="color:var(--clr-brand);">Assistance?</span></h2>
+                    <p class="cta-banner__subtitle">If you are already at the airport or need a taxi urgently, please call us directly for the fastest response.</p>
+                    <div class="cta-banner__actions">
+                        <a href="tel:+919747790799" class="btn btn--primary btn--xl">Call +91 97477 90799</a>
+                        <a href="#"
+                           class="btn btn--ghost btn--xl"
+                           data-whatsapp="Hello Goodwill Holidays! I have an urgent taxi requirement."
+                           aria-label="Chat with us on WhatsApp">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            WhatsApp Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ═══ FOOTER ══════════════════════════════════════════════════════════ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <!-- Brand column -->
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo" aria-label="Goodwill Holidays home">
+                        <img src="assets/logo/logo.png" alt="Goodwill Holidays" class="footer__logo-img" width="48" height="48" loading="lazy" />
+                        <div class="footer__logo-text">
+                            <span class="footer__logo-name">Goodwill Holidays</span>
+                            <span class="footer__logo-tagline">Taxi Service</span>
+                        </div>
+                    </a>
+                    <p class="footer__desc">Premium taxi service across Kerala and South India since 2010. Making travel beautiful, safe, and unforgettable.</p>
+                    <div class="footer__social" aria-label="Social media links">
+                        <a href="#" class="footer__social-link" aria-label="Facebook" rel="noopener noreferrer">f</a>
+                        <a href="#" class="footer__social-link" aria-label="Instagram" rel="noopener noreferrer">in</a>
+                        <a href="#" class="footer__social-link" aria-label="YouTube" rel="noopener noreferrer">▶</a>
+                        <a href="#" class="footer__social-link" aria-label="Twitter / X" rel="noopener noreferrer">𝕏</a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <nav aria-label="Services links">
+                    <div class="footer__col-title">Services</div>
+                    <div class="footer__links">
+                        <a href="airport-transfer.html" class="footer__link">✈️ Airport Transfer</a>
+                        <a href="homestays.html" class="footer__link">🏡 Homestays</a>
+                        <a href="contact.html" class="footer__link">🚗 Taxi Service</a>
+                    </div>
+                </nav>
+
+
+                <!-- Contact -->
+                <div>
+                    <div class="footer__col-title">Contact Us</div>
+                    <div class="footer__links">
+                        <div class="footer__contact-item">
+                            <span class="footer__contact-icon" aria-hidden="true">📞</span>
+                            <a href="tel:+919747790799" class="footer__link" style="transform:none;">+91 97477 90799</a>
+                        </div>
+                        <div class="footer__contact-item">
+                            <span class="footer__contact-icon" aria-hidden="true">📧</span>
+                            <a href="mailto:info@goodwillholidays.in" class="footer__link" style="transform:none;">info@goodwillholidays.in</a>
+                        </div>
+                        <div class="footer__contact-item">
+                            <span class="footer__contact-icon" aria-hidden="true">💬</span>
+                            <a href="#" class="footer__link" style="transform:none;"
+                               data-whatsapp="Hello Goodwill Holidays! I'd like to inquire about your travel services.">
+                                WhatsApp Us
+                            </a>
+                        </div>
+                        <div class="footer__contact-item">
+                            <span class="footer__contact-icon" aria-hidden="true">📍</span>
+                            <span>Wayanad, Kerala, India</span>
+                        </div>
+                        <div class="footer__contact-item">
+                            <span class="footer__contact-icon" aria-hidden="true">🕐</span>
+                            <span>Mon–Sun: 6:00 AM – 10:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    © <span id="footer-year">2025</span> Goodwill Holidays. All rights reserved.
+                </p>
+                <div class="footer__legal">
+                    <a href="contact.html">Privacy Policy</a>
+                    <a href="contact.html">Terms of Service</a>
+                    <a href="sitemap.xml">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+
+    <!-- WhatsApp Float Button -->
+    <a href="#"
+       class="whatsapp-float"
+       data-whatsapp="Hello Goodwill Holidays! I'd like to enquire about your services."
+       aria-label="Chat on WhatsApp">
+        <div class="whatsapp-float-tooltip">Chat with us!</div>
+        <svg viewBox="0 0 24 24" fill="white" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <!-- Sticky Mobile CTA -->
+    <div class="sticky-cta-mobile" aria-label="Quick booking actions">
+        <a href="tel:+919747790799" class="btn btn--ghost btn--sm">📞 Call</a>
+        <a href="#"
+           class="btn btn--whatsapp btn--sm"
+           data-whatsapp="Hello Goodwill Holidays! I'd like to book a trip. Please help me!">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+        </a>
+        <a href="contact.html" class="btn btn--primary btn--sm">Book Now</a>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/config.js" defer></script>
+    <script src="js/data.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/booking.js" defer></script>
+    <script src="js/main.js" defer></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Footer year
+        const yearEl = document.getElementById('footer-year');
+        if (yearEl) yearEl.textContent = new Date().getFullYear();
+        
+        // Handle vehicle selection in the form
+        const vehicleCards = document.querySelectorAll('.vehicle-selection .vehicle-card');
+        vehicleCards.forEach(card => {
+            card.addEventListener('click', () => {
+                vehicleCards.forEach(c => c.classList.remove('selected'));
+                card.classList.add('selected');
+            });
+        });
+
+        // Render Vehicle info cards
+        const vehiclesContainer = document.getElementById('vehicles-container');
+        if (vehiclesContainer && typeof vehicles !== 'undefined') {
+            vehicles.forEach(v => {
+                const div = document.createElement('div');
+                div.className = 'vehicle-info-card';
+                div.innerHTML = `
+                    <h4 style="font-size: 1.25rem; margin-bottom: 0.5rem;">${v.type} <span style="font-size:0.9rem; color:var(--clr-text-muted); font-weight:normal;">(${v.models.join(', ')})</span></h4>
+                    <ul style="color: var(--clr-text-secondary); font-size: 0.9rem; margin-bottom: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                        <li>👥 Up to ${v.capacity} Passengers</li>
+                        <li>🧳 Up to ${v.luggage} Bags</li>
+                        <li>❄️ AC Included</li>
+                    </ul>
+                `;
+                vehiclesContainer.appendChild(div);
+            });
+        }
+
+        // Wire up the passenger reviews carousel (side-scroll)
+        const reviewsTrack = document.getElementById('airport-testimonial-container');
+        const reviewsPrevBtn = document.getElementById('airport-reviews-scroll-left');
+        const reviewsNextBtn = document.getElementById('airport-reviews-scroll-right');
+        if (reviewsTrack) {
+            const reviewScrollStep = 400;
+            if (reviewsPrevBtn) {
+                reviewsPrevBtn.addEventListener('click', () => {
+                    reviewsTrack.scrollBy({ left: -reviewScrollStep, behavior: 'smooth' });
+                });
+            }
+            if (reviewsNextBtn) {
+                reviewsNextBtn.addEventListener('click', () => {
+                    reviewsTrack.scrollBy({ left: reviewScrollStep, behavior: 'smooth' });
+                });
+            }
+        }
+    });
+    </script>
+</body>
+</html>
