@@ -246,6 +246,48 @@
             font-weight: 700;
             color: var(--clr-text-primary);
         }
+        /* ── Homestay Photo Gallery Grid ── */
+        .hs-gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        @media (max-width: 540px) {
+            .hs-gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .hs-gallery-item {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--clr-border);
+            background: var(--clr-bg-secondary);
+        }
+        .hs-gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+            display: block;
+        }
+        .hs-gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        .hs-gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1.5rem 0.85rem 0.6rem;
+            background: linear-gradient(to top, rgba(15,41,24,0.85) 0%, transparent 100%);
+            color: #ffffff;
+            font-size: 0.82rem;
+            font-weight: 600;
+        }
 
         /* ── Destination Gallery ── */
         .dest-gallery {
@@ -377,7 +419,7 @@
 
         <!-- ═══ HOMESTAY HERO ════════════════════════════════════════════════ -->
         <div class="hs-hero">
-            <img src="assets/images/homestay.webp" alt="Goodwill Homestay, Wayanad Kerala" class="hs-hero__img" fetchpriority="high" />
+            <img src="assets/images/homestay.webp" data-gallery="assets/images/homestay.jpg" alt="Goodwill Homestay, Wayanad Kerala – Villa &amp; Pool" class="hs-hero__img" fetchpriority="high" title="Click to view full screen" style="cursor:pointer;" />
             <div class="hs-hero__overlay"></div>
             <div class="hs-hero__content">
                 <div class="breadcrumb" style="margin-bottom:0.75rem;">
@@ -424,20 +466,44 @@
                             <p style="color:var(--clr-text-secondary); line-height:1.8; font-size:0.95rem;">
                                 A warm, authentic family homestay nestled in the serene village of Moolankavu, deep in the lush forests of Wayanad, Kerala. Surrounded by coffee and pepper plantations, with the gentle sounds of the forest all around, this is the perfect retreat for families seeking a genuine Kerala experience.
                             </p>
-                           
+                        </div>
+
+                        <!-- Property Photos Gallery -->
+                        <div class="hs-card">
+                            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem; margin-bottom:0.25rem;">
+                                <h3 style="margin-bottom:0;">Property Photos</h3>
+                                <span style="font-size:0.8rem; color:var(--clr-brand); font-weight:600;">🔍 Click to enlarge</span>
+                            </div>
+                            <div class="hs-gallery-grid">
+                                <div class="hs-gallery-item">
+                                    <img src="assets/images/homestay-living.jpg" data-gallery="assets/images/homestay-living.jpg" alt="Spacious Living Room – Goodwill Homestay Wayanad" loading="lazy" title="Click to view full screen" />
+                                    <div class="hs-gallery-caption">🛋️ Living Lounge</div>
+                                </div>
+                                <div class="hs-gallery-item">
+                                    <img src="assets/images/homestay-dining.jpg" data-gallery="assets/images/homestay-dining.jpg" alt="Dining Area – Goodwill Homestay Wayanad" loading="lazy" title="Click to view full screen" />
+                                    <div class="hs-gallery-caption">🍽️ Dining Area</div>
+                                </div>
+                                <div class="hs-gallery-item">
+                                    <img src="assets/images/homestay-kitchen.jpg" data-gallery="assets/images/homestay-kitchen.jpg" alt="Modern Kitchen – Goodwill Homestay Wayanad" loading="lazy" title="Click to view full screen" />
+                                    <div class="hs-gallery-caption">🍳 Modular Kitchen</div>
+                                </div>
+                                <div class="hs-gallery-item">
+                                    <img src="assets/images/homestay-front.jpg" data-gallery="assets/images/homestay-front.jpg" alt="Villa Architecture – Goodwill Homestay Wayanad" loading="lazy" title="Click to view full screen" />
+                                    <div class="hs-gallery-caption">🏡 Villa Front View</div>
+                                </div>
+                            </div>
                         </div>
 
                         <!-- Amenities -->
                         <div class="hs-card">
                             <h3>What's Included</h3>
                             <div class="amenity-grid">
-                                <!-- <div class="amenity-item">Forest View Rooms</div> -->
-                                <div class="amenity-item">Nature Walks</div>
-                                <!-- <div class="amenity-item">Coffee Plantation Tour</div> -->
-                                <div class="amenity-item">Free Parking</div>
-                                <!-- <div class="amenity-item">Evening Campfire</div> -->
-                                <!-- <div class="amenity-item">Bird Watching</div> -->
-                                <div class="amenity-item">Traditional Architecture</div>
+                                <div class="amenity-item">🏊 Private Swimming Pool</div>
+                                <div class="amenity-item">🍳 Modular Kitchen</div>
+                                <div class="amenity-item">🛋️ Living &amp; Dining Lounge</div>
+                                <div class="amenity-item">🚗 Free Parking</div>
+                                <div class="amenity-item">🌿 Nature Walks</div>
+                                <div class="amenity-item">🏡 Traditional Architecture</div>
                             </div>
                         </div>
 

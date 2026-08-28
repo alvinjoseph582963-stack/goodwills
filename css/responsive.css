@@ -443,6 +443,45 @@ html, body {
     .whatsapp-float {
         display: none !important;
     }
+
+    /* Mobile Lightbox */
+    .lightbox-close {
+        top: 1rem;
+        right: 1rem;
+        width: 40px;
+        height: 40px;
+        font-size: 1.25rem;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 10;
+    }
+
+    .lightbox-prev {
+        left: 0.5rem;
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    .lightbox-next {
+        right: 0.5rem;
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    .lightbox-img {
+        max-width: 94vw;
+        max-height: 75vh;
+    }
+
+    .lightbox-counter {
+        background: rgba(0, 0, 0, 0.7);
+        padding: 4px 12px;
+        border-radius: 999px;
+        font-size: 0.8rem;
+    }
 }
 
 /* ─── EXTRA SMALL: <= 480px (375px, 425px) ─────────────────────── */

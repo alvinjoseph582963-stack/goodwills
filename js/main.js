@@ -295,6 +295,33 @@
             updateLightbox();
         });
 
+        // Touch swipe support on mobile
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        lightbox.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        lightbox.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }, { passive: true });
+
+        function handleSwipe() {
+            const diff = touchEndX - touchStartX;
+            if (Math.abs(diff) > 45) {
+                if (diff < 0) {
+                    // Swipe left -> Next image
+                    currentIndex = (currentIndex + 1) % images.length;
+                } else {
+                    // Swipe right -> Prev image
+                    currentIndex = (currentIndex - 1 + images.length) % images.length;
+                }
+                updateLightbox();
+            }
+        }
+
         document.addEventListener('keydown', (e) => {
             if (!lightbox.classList.contains('is-open')) return;
             if (e.key === 'Escape') closeLightbox();
