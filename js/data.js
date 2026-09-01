@@ -115,21 +115,21 @@ const services = [
     {
         id: "airport-transfer",
         title: "Airport Transfer",
-        icon: "✈️",
+        icon: "",
         description: "Punctual, professional airport pickup and drop service. AC vehicles, flight tracking, and courteous drivers.",
         link: "airport-transfer.html"
     },
     {
         id: "taxi",
         title: "Taxi Services",
-        icon: "🚗",
+        icon: "",
         description: "Reliable outstation and local taxi services across Kerala and South India with experienced drivers.",
         link: "contact.html"
     },
     {
         id: "homestays",
         title: "Homestays",
-        icon: "🏡",
+        icon: "",
         description: "Handpicked family-friendly homestays offering authentic Kerala hospitality and home-cooked meals.",
         link: "homestays.html"
     }
@@ -169,7 +169,7 @@ const stats = [
     { value: "5000+", label: "Happy Travelers" },
     { value: "15+", label: "Years Experience" },
     { value: "200+", label: "Routes Covered" },
-    { value: "4.9★", label: "Average Rating" }
+    { value: "4.9 / 5", label: "Average Rating" }
 ];
 
 
@@ -180,7 +180,7 @@ const vehicles = [
         model: "Toyota Etios / Dzire",
         capacity: 4,
         luggage: 2,
-        icon: "🚗",
+        icon: "",
         priceBase: 1200,
         pricePerKm: 12,
         description: "Comfortable, fuel-efficient sedan perfect for solo travelers and couples.",
@@ -192,7 +192,7 @@ const vehicles = [
         model: "Toyota Innova / Ertiga",
         capacity: 6,
         luggage: 4,
-        icon: "🚙",
+        icon: "",
         priceBase: 1800,
         pricePerKm: 16,
         description: "Spacious, comfortable SUV ideal for small families and groups.",
@@ -204,7 +204,7 @@ const vehicles = [
         model: "Force Traveller",
         capacity: 12,
         luggage: 8,
-        icon: "🚐",
+        icon: "",
         priceBase: 2800,
         pricePerKm: 22,
         description: "Large minivan for big families and group travel with ample luggage space.",

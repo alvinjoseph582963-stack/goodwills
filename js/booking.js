@@ -21,11 +21,11 @@
     };
 
     const STEPS = [
-        { id: 1, title: 'Choose Service', icon: '🧭' },
-        { id: 2, title: 'Your Journey', icon: '📍' },
-        { id: 3, title: 'Select Dates', icon: '📅' },
-        { id: 4, title: 'Your Details', icon: '👤' },
-        { id: 5, title: 'Review & Send', icon: '✉️' }
+        { id: 1, title: 'Choose Service', icon: '1' },
+        { id: 2, title: 'Your Journey', icon: '2' },
+        { id: 3, title: 'Select Dates', icon: '3' },
+        { id: 4, title: 'Your Details', icon: '4' },
+        { id: 5, title: 'Review & Send', icon: '5' }
     ];
 
     // ─── Render Step Indicator ────────────────────────────────────────────────
@@ -80,9 +80,9 @@
 
     function renderStep1(container) {
         const services = [
-            { id: 'airport', label: 'Airport Transfer', icon: '✈️', desc: 'Pickup or drop at airport' },
-            { id: 'homestay', label: 'Homestay', icon: '🏡', desc: 'Comfortable family stays' },
-            { id: 'taxi', label: 'Taxi / Cab', icon: '🚗', desc: 'Point-to-point cab service' }
+            { id: 'airport', label: 'Airport Transfer', icon: '', desc: 'Pickup or drop at airport' },
+            { id: 'homestay', label: 'Homestay', icon: '', desc: 'Comfortable family stays' },
+            { id: 'taxi', label: 'Taxi / Cab', icon: '', desc: 'Point-to-point cab service' }
         ];
 
         container.innerHTML = `
@@ -146,9 +146,9 @@
                 <div class="form-group" id="vehicle-group">
                     <label class="form-label">Vehicle Preference (optional)</label>
                     <div class="vehicle-chips">
-                        <button type="button" class="vehicle-chip ${bookingState.vehicle === 'sedan' ? 'selected' : ''}" data-vehicle="sedan">🚗 Sedan (1-4)</button>
-                        <button type="button" class="vehicle-chip ${bookingState.vehicle === 'suv' ? 'selected' : ''}" data-vehicle="suv">🚙 SUV (1-6)</button>
-                        <button type="button" class="vehicle-chip ${bookingState.vehicle === 'tempo' ? 'selected' : ''}" data-vehicle="tempo">🚐 Tempo (7-12)</button>
+                        <button type="button" class="vehicle-chip ${bookingState.vehicle === 'sedan' ? 'selected' : ''}" data-vehicle="sedan">Sedan (1-4)</button>
+                        <button type="button" class="vehicle-chip ${bookingState.vehicle === 'suv' ? 'selected' : ''}" data-vehicle="suv">SUV (1-6)</button>
+                        <button type="button" class="vehicle-chip ${bookingState.vehicle === 'tempo' ? 'selected' : ''}" data-vehicle="tempo">Tempo (7-12)</button>
                     </div>
                 </div>
             </div>
@@ -266,7 +266,7 @@
     }
 
     function renderStep5(container) {
-        const vehicleLabels = { sedan: '🚗 Sedan', suv: '🚙 Premium SUV', tempo: '🚐 Tempo Traveller' };
+        const vehicleLabels = { sedan: 'Sedan', suv: 'Premium SUV', tempo: 'Tempo Traveller' };
         const waMessage = formatBookingMessage();
 
         container.innerHTML = `
@@ -333,10 +333,10 @@
                 </button>
                 <a href="tel:${typeof GOODWILL_CONFIG !== 'undefined' ? GOODWILL_CONFIG.phoneRaw : ''}"
                    class="btn btn--outline btn--full">
-                    📞 Call Us Directly
+                    Call Us Directly
                 </a>
                 <button class="btn btn--ghost btn--full" id="submit-email">
-                    📧 Send via Email
+                    Send via Email
                 </button>
             </div>
         `;
@@ -364,13 +364,13 @@
 
         container.innerHTML = `
             <div class="booking-success">
-                <div class="success-icon" aria-hidden="true">🎉</div>
+                <div class="success-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                 <h2>Inquiry Sent!</h2>
                 <p>Your inquiry has been opened in WhatsApp. Our team will respond within 30 minutes.</p>
                 <div class="success-contact">
                     <p>You can also reach us at:</p>
                     <a href="tel:${typeof GOODWILL_CONFIG !== 'undefined' ? GOODWILL_CONFIG.phoneRaw : ''}" class="btn btn--outline">
-                        📞 ${typeof GOODWILL_CONFIG !== 'undefined' ? GOODWILL_CONFIG.phone : ''}
+                        ${typeof GOODWILL_CONFIG !== 'undefined' ? GOODWILL_CONFIG.phone : ''}
                     </a>
                 </div>
                 <button class="btn btn--ghost" id="restart-booking">Start a new inquiry</button>
@@ -477,7 +477,7 @@
 
     function formatBookingMessage() {
         const vehicleLabels = { sedan: 'Sedan (1-4 pax)', suv: 'Premium SUV (1-6 pax)', tempo: 'Tempo Traveller (7-12 pax)' };
-        return `Hello Goodwill Holidays! 👋\n\nI would like to enquire about:\n\n🧭 Service: ${bookingState.serviceLabel}\n📍 Destination: ${bookingState.destination || 'To be discussed'}${bookingState.pickup ? '\n🚗 Pickup: ' + bookingState.pickup : ''}\n📅 Dates: ${formatDateRange()}\n👥 Guests: ${bookingState.guests}${bookingState.vehicle ? '\n🚙 Vehicle: ' + (vehicleLabels[bookingState.vehicle] || bookingState.vehicle) : ''}\n\n👤 Name: ${bookingState.name}\n📱 Phone: ${bookingState.phone}${bookingState.email ? '\n📧 Email: ' + bookingState.email : ''}${bookingState.notes ? '\n\n📝 Notes: ' + bookingState.notes : ''}\n\nPlease share availability and pricing. Thank you!`;
+        return `Hello Goodwill Holidays!\n\nI would like to enquire about:\n\n• Service: ${bookingState.serviceLabel}\n• Destination: ${bookingState.destination || 'To be discussed'}${bookingState.pickup ? '\n• Pickup: ' + bookingState.pickup : ''}\n• Dates: ${formatDateRange()}\n• Guests: ${bookingState.guests}${bookingState.vehicle ? '\n• Vehicle: ' + (vehicleLabels[bookingState.vehicle] || bookingState.vehicle) : ''}\n\n• Name: ${bookingState.name}\n• Phone: ${bookingState.phone}${bookingState.email ? '\n• Email: ' + bookingState.email : ''}${bookingState.notes ? '\n\n• Notes: ' + bookingState.notes : ''}\n\nPlease share availability and pricing. Thank you!`;
     }
 
     // ─── Airport Transfer Form ────────────────────────────────────────────────

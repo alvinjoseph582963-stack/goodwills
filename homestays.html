@@ -143,7 +143,7 @@
             color: var(--clr-text-secondary);
         }
         .nearby-list li:last-child { border-bottom: none; }
-        .nearby-list li::before { content: '📍'; font-size: 0.9rem; }
+        .nearby-list li::before { content: '· '; font-weight: 700; color: var(--clr-brand); }
         .rules-list {
             list-style: none;
             padding: 0;
@@ -177,7 +177,7 @@
             font-size: 0.82rem;
             font-weight: 600;
         }
-        .hs-highlight-chip::before { content: '🌿'; }
+        .hs-highlight-chip::before { content: '· '; font-weight: 700; color: var(--clr-brand); }
 
         /* ── Booking CTA card ── */
         .hs-booking-card {
@@ -368,10 +368,9 @@
         <nav class="navbar" aria-label="Main navigation">
             <div class="navbar__inner">
                 <a href="index.html" class="navbar__logo" aria-label="Goodwill Holidays – Home">
-                    <img src="assets/logo/logo.png" alt="Goodwill Holidays Logo" class="navbar__logo-img" width="44" height="44" />
+                    <img src="assets/logo/logo.png" alt="Goodwill Holidays Logo" class="navbar__logo-img" decoding="async" width="44" height="44" />
                     <div class="navbar__logo-text">
                         <span class="navbar__logo-name">Goodwill Holidays</span>
-                        <span class="navbar__logo-tagline">Taxi Service</span>
                     </div>
                 </a>
                 <div class="navbar__nav" role="navigation">
@@ -393,7 +392,7 @@
     <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" aria-hidden="true">
         <div class="mobile-menu__header">
             <a href="index.html" class="navbar__logo">
-                <img src="assets/logo/logo.png" alt="Goodwill Holidays" class="navbar__logo-img" width="36" height="36" />
+                <img src="assets/logo/logo.png" alt="Goodwill Holidays" class="navbar__logo-img" decoding="async" width="36" height="36" />
                 <div class="navbar__logo-text">
                     <span class="navbar__logo-name">Goodwill Holidays</span>
                     <span class="navbar__logo-tagline">Taxi Service</span>
@@ -402,10 +401,10 @@
             <button class="mobile-menu-close" aria-label="Close navigation menu">✕</button>
         </div>
         <div class="mobile-menu__nav">
-            <a href="index.html" class="mobile-nav-link">🏠 Home</a>
-            <a href="airport-transfer.html" class="mobile-nav-link">✈️ Airport Transfer</a>
-            <a href="homestays.html" class="mobile-nav-link">🏡 Homestays</a>
-            <a href="contact.html" class="mobile-nav-link">📞 Contact Us</a>
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="airport-transfer.html" class="mobile-nav-link">Airport Transfer</a>
+            <a href="homestays.html" class="mobile-nav-link">Homestays</a>
+            <a href="contact.html" class="mobile-nav-link">Contact Us</a>
         </div>
         <div class="mobile-menu__footer">
             <a href="#" class="btn btn--whatsapp btn--full"
@@ -419,7 +418,7 @@
 
         <!-- ═══ HOMESTAY HERO ════════════════════════════════════════════════ -->
         <div class="hs-hero">
-            <img src="assets/images/homestay.webp" data-gallery="assets/images/homestay.jpg" alt="Goodwill Homestay, Wayanad Kerala – Villa &amp; Pool" class="hs-hero__img" fetchpriority="high" title="Click to view full screen" style="cursor:pointer;" />
+            <img src="assets/images/homestay.webp" data-gallery="assets/images/homestay.jpg" alt="Goodwill Homestay, Wayanad Kerala – Villa &amp; Pool" class="hs-hero__img" fetchpriority="high" decoding="async" width="1024" height="682" title="Click to view full screen" style="cursor:pointer;" />
             <div class="hs-hero__overlay"></div>
             <div class="hs-hero__content">
                 <div class="breadcrumb" style="margin-bottom:0.75rem;">
@@ -427,9 +426,9 @@
                     <span class="breadcrumb-separator" style="color:rgba(255,255,255,0.5);">›</span>
                     <span style="color:#fff;">Homestays</span>
                 </div>
-                <div class="hs-badge">👨‍👩‍👧‍👦 Family Friendly Only</div>
+                <div class="hs-badge">Family Friendly Only</div>
                 <h1 class="hs-hero__title">Goodwill Homestay</h1>
-                <p class="hs-hero__sub">📍  Wayanad, Kerala  &nbsp;·&nbsp; Authentic Kerala Experience</p>
+                <p class="hs-hero__sub">Wayanad, Kerala  &nbsp;·&nbsp; Authentic Kerala Experience</p>
             </div>
         </div>
 
@@ -447,15 +446,15 @@
                                 
                                 <div class="hs-meta-item">
                                     <span>Bedrooms</span>
-                                    <span>🛏 4 Rooms</span>
+                                    <span>4 Rooms</span>
                                 </div>
                                 <!-- <div class="hs-meta-item">
                                     <span>Location</span>
-                                    <span>🌿 Wayanad Forest</span>
+                                    <span>Wayanad Forest</span>
                                 </div> -->
                                 <div class="hs-meta-item">
                                     <span>Family</span>
-                                    <span>✅ Families Only</span>
+                                    <span>Families Only</span>
                                 </div>
                             </div>
 
@@ -469,24 +468,24 @@
                         <div class="hs-card">
                             <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem; margin-bottom:0.25rem;">
                                 <h3 style="margin-bottom:0;">Property Photos</h3>
-                                <span style="font-size:0.8rem; color:var(--clr-brand); font-weight:600;">🔍 Click to enlarge</span>
+                                <span style="font-size:0.8rem; color:var(--clr-brand); font-weight:600;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline-block;vertical-align:middle;margin-right:4px;"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg> Click to enlarge</span>
                             </div>
                             <div class="hs-gallery-grid">
                                 <div class="hs-gallery-item">
-                                    <img src="assets/images/homestay-living.jpg" data-gallery="assets/images/homestay-living.jpg" alt="Spacious Living Room – Goodwill Homestay Wayanad" loading="lazy" title="Click to view full screen" />
-                                    <div class="hs-gallery-caption">🛋️ Living Lounge</div>
+                                    <img src="assets/images/homestay-living.jpg" data-gallery="assets/images/homestay-living.jpg" alt="Spacious Living Room – Goodwill Homestay Wayanad" loading="lazy" decoding="async" width="683" height="1024" title="Click to view full screen" />
+                                    <div class="hs-gallery-caption">Living Lounge</div>
                                 </div>
                                 <div class="hs-gallery-item">
-                                    <img src="assets/images/homestay-dining.jpg" data-gallery="assets/images/homestay-dining.jpg" alt="Dining Area – Goodwill Homestay Wayanad" loading="lazy" title="Click to view full screen" />
-                                    <div class="hs-gallery-caption">🍽️ Dining Area</div>
+                                    <img src="assets/images/homestay-dining.jpg" data-gallery="assets/images/homestay-dining.jpg" alt="Dining Area – Goodwill Homestay Wayanad" loading="lazy" decoding="async" width="682" height="1024" title="Click to view full screen" />
+                                    <div class="hs-gallery-caption">Dining Area</div>
                                 </div>
                                 <div class="hs-gallery-item">
-                                    <img src="assets/images/homestay-kitchen.jpg" data-gallery="assets/images/homestay-kitchen.jpg" alt="Modern Kitchen – Goodwill Homestay Wayanad" loading="lazy" title="Click to view full screen" />
-                                    <div class="hs-gallery-caption">🍳 Modular Kitchen</div>
+                                    <img src="assets/images/homestay-kitchen.jpg" data-gallery="assets/images/homestay-kitchen.jpg" alt="Modern Kitchen – Goodwill Homestay Wayanad" loading="lazy" decoding="async" width="1024" height="682" title="Click to view full screen" />
+                                    <div class="hs-gallery-caption">Modular Kitchen</div>
                                 </div>
                                 <div class="hs-gallery-item">
-                                    <img src="assets/images/homestay-front.jpg" data-gallery="assets/images/homestay-front.jpg" alt="Villa Architecture – Goodwill Homestay Wayanad" loading="lazy" title="Click to view full screen" />
-                                    <div class="hs-gallery-caption">🏡 Villa Front View</div>
+                                    <img src="assets/images/homestay-front.jpg" data-gallery="assets/images/homestay-front.jpg" alt="Villa Architecture – Goodwill Homestay Wayanad" loading="lazy" decoding="async" width="1024" height="682" title="Click to view full screen" />
+                                    <div class="hs-gallery-caption">Villa Front View</div>
                                 </div>
                             </div>
                         </div>
@@ -495,12 +494,12 @@
                         <div class="hs-card">
                             <h3>What's Included</h3>
                             <div class="amenity-grid">
-                                <div class="amenity-item">🏊 Private Swimming Pool</div>
-                                <div class="amenity-item">🍳 Modular Kitchen</div>
-                                <div class="amenity-item">🛋️ Living &amp; Dining Lounge</div>
-                                <div class="amenity-item">🚗 Free Parking</div>
-                                <div class="amenity-item">🌿 Nature Walks</div>
-                                <div class="amenity-item">🏡 Traditional Architecture</div>
+                                <div class="amenity-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 4-2"></path><path d="M2 16c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 4-2"></path><path d="M6 12V4c0-.6.4-1 1-1h2c.6 0 1 .4 1 1v8"></path></svg> Private Swimming Pool</div>
+                                <div class="amenity-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2v20"></path><path d="M6 2v6a3 3 0 0 0 6 0V2"></path><path d="M9 11v11"></path></svg> Modular Kitchen</div>
+                                <div class="amenity-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3"></path><path d="M2 11v5a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v2H6v-2a2 2 0 0 0-4 0Z"></path><path d="M4 18v2"></path><path d="M20 18v2"></path></svg> Living &amp; Dining Lounge</div>
+                                <div class="amenity-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M9 17V7h4a3 3 0 0 1 0 6H9"></path></svg> Free Parking On-site</div>
+                                <div class="amenity-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19 3-7h-2l3-6-4 2-3-4-3 4-4-2 3 6h-2l3 7"></path><path d="M12 19v3"></path></svg> Nature Walks</div>
+                                <div class="amenity-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"></rect><path d="M9 22v-4h6v4"></path><path d="M8 6h.01"></path><path d="M16 6h.01"></path><path d="M8 10h.01"></path><path d="M16 10h.01"></path><path d="M8 14h.01"></path><path d="M16 14h.01"></path></svg> Traditional Architecture</div>
                             </div>
                         </div>
 
@@ -537,17 +536,17 @@
                             <p>Contact us directly to check availability and plan your family stay at Moolankavu. We'll guide you through everything.</p>
                             <a href="#" class="btn btn--full"
                                style="background:#25d366; color:#fff; border-color:#25d366; margin-bottom:0.75rem;"
-                               data-whatsapp="Hello Goodwill Holidays! 🏡 I'd like to book the Goodwill Homestay in Wayanad. Please share availability details. Thank you!">
+                               data-whatsapp="Hello Goodwill Holidays! I'd like to book the Goodwill Homestay in Wayanad. Please share availability details. Thank you!">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                                 WhatsApp to Book
                             </a>
                             <a href="tel:+919747790799" class="btn btn--ghost btn--full">
-                                📞 Call +91 97477 90799
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline-block;vertical-align:middle;margin-right:4px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Call +91 97477 90799
                             </a>
                             <div class="hs-contact-info">
-                                <p>📍 Goodwill homestay Wayanad, Kerala</p>
-                                <p>🕐 Available: 24x7</p>
-                                <p>👨‍👩‍👧‍👦 Family Bookings Only</p>
+                                <p><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline-block;vertical-align:middle;margin-right:2px;"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg> Goodwill Homestay, Wayanad, Kerala</p>
+                                <p><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Available: 24/7</p>
+                                <p><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg> Family Bookings Only</p>
                             </div>
                         </div>
                     </div>
@@ -565,17 +564,17 @@
                 </div>
                 <div class="why-bento" style="grid-template-columns:repeat(auto-fit,minmax(230px,1fr));">
                     <div class="why-card reveal">
-                        <div class="why-card__icon">🌿</div>
+                        <div class="why-card__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19 3-7h-2l3-6-4 2-3-4-3 4-4-2 3 6h-2l3 7"></path><path d="M12 19v3"></path></svg></div>
                         <h3 class="why-card__title">Pure Nature</h3>
                         <p class="why-card__desc">Wake up to bird song, mist-covered hills, and the fresh scent of coffee blossoms — true Wayanad wilderness.</p>
                     </div>
                     <div class="why-card reveal" data-delay="200">
-                        <div class="why-card__icon">👨‍👩‍👧‍👦</div>
+                        <div class="why-card__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div>
                         <h3 class="why-card__title">Families Welcome</h3>
                         <p class="why-card__desc">Thoughtfully designed for families — safe surroundings, spacious rooms, and activities everyone will love.</p>
                     </div>
                     <div class="why-card reveal" data-delay="300">
-                        <div class="why-card__icon">🤝</div>
+                        <div class="why-card__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
                         <h3 class="why-card__title">Local Hosts</h3>
                         <p class="why-card__desc">Your hosts are lifelong Moolankavu residents who know every trail, every story, and every secret of the forest.</p>
                     </div>
@@ -632,7 +631,7 @@
             <div class="footer__grid">
                 <div class="footer__brand">
                     <a href="index.html" class="footer__logo" aria-label="Goodwill Holidays home">
-                        <img src="assets/logo/logo.png" alt="Goodwill Holidays" class="footer__logo-img" width="48" height="48" loading="lazy" />
+                        <img src="assets/logo/logo.png" alt="Goodwill Holidays" class="footer__logo-img" decoding="async" width="48" height="48" loading="lazy" />
                         <div class="footer__logo-text">
                             <span class="footer__logo-name">Goodwill Holidays</span>
                             <span class="footer__logo-tagline">Taxi Service</span>
@@ -649,31 +648,31 @@
                 <nav aria-label="Services links">
                     <div class="footer__col-title">Services</div>
                     <div class="footer__links">
-                        <a href="airport-transfer.html" class="footer__link">✈️ Airport Transfer</a>
-                        <a href="homestays.html" class="footer__link">🏡 Homestays</a>
-                        <a href="contact.html" class="footer__link">🚗 Taxi Service</a>
+                        <a href="airport-transfer.html" class="footer__link">Airport Transfer</a>
+                        <a href="homestays.html" class="footer__link">Homestays</a>
+                        <a href="contact.html" class="footer__link">Taxi Service</a>
                     </div>
                 </nav>
                 <div>
                     <div class="footer__col-title">Contact Us</div>
                     <div class="footer__links">
                         <div class="footer__contact-item">
-                            <span class="footer__contact-icon" aria-hidden="true">📞</span>
+                            <span class="footer__contact-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></span>
                             <a href="tel:+919747790799" class="footer__link" style="transform:none;">+91 97477 90799</a>
                         </div>
                         <div class="footer__contact-item">
-                            <span class="footer__contact-icon" aria-hidden="true">💬</span>
+                            <span class="footer__contact-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></span>
                             <a href="#" class="footer__link" style="transform:none;"
                                data-whatsapp="Hello Goodwill Holidays! I'd like to inquire about your travel services.">
                                 WhatsApp Us
                             </a>
                         </div>
                         <div class="footer__contact-item">
-                            <span class="footer__contact-icon" aria-hidden="true">📍</span>
+                            <span class="footer__contact-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg></span>
                             <span>Wayanad, Kerala, India</span>
                         </div>
                         <div class="footer__contact-item">
-                            <span class="footer__contact-icon" aria-hidden="true">🕐</span>
+                            <span class="footer__contact-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span>
                             <span>24/7</span>
                         </div>
                     </div>
@@ -700,7 +699,7 @@
     </a>
 
     <div class="sticky-cta-mobile" aria-label="Quick booking actions">
-        <a href="tel:+919747790799" class="btn btn--ghost btn--sm">📞 Call</a>
+        <a href="tel:+919747790799" class="btn btn--ghost btn--sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline-block;vertical-align:middle;margin-right:4px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Call</a>
         <a href="#" class="btn btn--whatsapp btn--sm"
            data-whatsapp="Hello Goodwill Holidays! I'd like to book the Moolankavu homestay!">
             WhatsApp
