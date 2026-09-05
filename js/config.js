@@ -8,7 +8,6 @@ const GOODWILL_CONFIG = {
     whatsapp: "919747790799",             // WhatsApp number (country code + number, no +)
     phone: "+91 97477 90799",             // Display phone number
     phoneRaw: "919747790799",             // Phone number for tel: links
-    email: "info@goodwillholidays.in",
     website: "https://www.goodwillholidays.in",
 
     // ─── Business Info ────────────────────────────────────────────────
@@ -41,8 +40,7 @@ function generateWhatsAppURL(message) {
     return `https://wa.me/${GOODWILL_CONFIG.whatsapp}?text=${encoded}`;
 }
 
-function generateMailtoURL(subject, body) {
-    return `mailto:${GOODWILL_CONFIG.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
 
 function formatTransferInquiry(pickup, dropoff, date, time, passengers) {

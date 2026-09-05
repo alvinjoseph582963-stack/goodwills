@@ -2825,7 +2825,9 @@ h1, h2, h3, h4, h5, h6 {
 /* ─── CONTACT PAGE ──────────────────────────────────────────── */
 .contact-methods-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+    margin: 0 auto var(--space-12);
     gap: var(--space-6);
     margin-bottom: var(--space-12);
 }

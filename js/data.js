@@ -140,7 +140,7 @@ const services = [
 const faqs = [
     {
         question: "How do I book a taxi or airport transfer?",
-        answer: "Simply click 'Book Now' or 'WhatsApp Us' on any page. We'll confirm your booking within 2 hours. You can also call or email us directly."
+        answer: "Simply click 'Book Now' or 'WhatsApp Us' on any page. We'll confirm your booking within 2 hours. You can also call or message us directly on WhatsApp."
     },
     {
         question: "Do you offer airport pickup at all major airports in South India?",
@@ -160,7 +160,7 @@ const faqs = [
     },
     {
         question: "What's your response time for inquiries?",
-        answer: "WhatsApp inquiries are typically answered within 24 hours. Email inquiries within 24 hours. We're available 6 AM – 10 PM IST every day."
+        answer: "WhatsApp inquiries are typically answered within 24 hours. We're available 6 AM – 10 PM IST every day."
     }
 ];
 

@@ -16,7 +16,6 @@
         guests: 1,
         name: '',
         phone: '',
-        email: '',
         notes: ''
     };
 
@@ -245,12 +244,7 @@
                         required aria-required="true" autocomplete="tel" />
                     <span class="form-error" id="phone-error" role="alert" aria-live="polite"></span>
                 </div>
-                <div class="form-group">
-                    <label for="booking-email" class="form-label">Email Address</label>
-                    <input type="email" id="booking-email" class="form-input"
-                        placeholder="you@example.com" value="${bookingState.email}"
-                        autocomplete="email" />
-                </div>
+                
                 <div class="form-group">
                     <label for="booking-notes" class="form-label">Special Requests / Notes</label>
                     <textarea id="booking-notes" class="form-textarea" rows="3"
@@ -261,7 +255,7 @@
 
         container.querySelector('#booking-name')?.addEventListener('input', (e) => { bookingState.name = e.target.value; });
         container.querySelector('#booking-phone')?.addEventListener('input', (e) => { bookingState.phone = e.target.value; });
-        container.querySelector('#booking-email')?.addEventListener('input', (e) => { bookingState.email = e.target.value; });
+        
         container.querySelector('#booking-notes')?.addEventListener('input', (e) => { bookingState.notes = e.target.value; });
     }
 
@@ -308,11 +302,7 @@
                     <span class="review-label">Phone</span>
                     <span class="review-value">${bookingState.phone || 'Not provided'}</span>
                 </div>
-                ${bookingState.email ? `
-                <div class="review-row">
-                    <span class="review-label">Email</span>
-                    <span class="review-value">${bookingState.email}</span>
-                </div>` : ''}
+                
                 ${bookingState.notes ? `
                 <div class="review-row">
                     <span class="review-label">Notes</span>
@@ -335,9 +325,7 @@
                    class="btn btn--outline btn--full">
                     Call Us Directly
                 </a>
-                <button class="btn btn--ghost btn--full" id="submit-email">
-                    Send via Email
-                </button>
+                
             </div>
         `;
 
@@ -348,14 +336,7 @@
             }
         });
 
-        container.querySelector('#submit-email')?.addEventListener('click', () => {
-            if (typeof generateMailtoURL === 'function') {
-                window.location.href = generateMailtoURL(
-                    `Booking Inquiry – ${bookingState.serviceLabel}`,
-                    waMessage
-                );
-            }
-        });
+        
     }
 
     function showConfirmation() {
@@ -378,7 +359,7 @@
         `;
 
         container.querySelector('#restart-booking')?.addEventListener('click', () => {
-            bookingState = { step: 1, service: '', serviceLabel: '', destination: '', dates: '', guests: 1, name: '', phone: '', email: '', notes: '' };
+            bookingState = { step: 1, service: '', serviceLabel: '', destination: '', dates: '', guests: 1, name: '', phone: '', notes: '' };
             renderStepIndicator();
             renderStepContent();
         });
@@ -477,7 +458,7 @@
 
     function formatBookingMessage() {
         const vehicleLabels = { sedan: 'Sedan (1-4 pax)', suv: 'Premium SUV (1-6 pax)', tempo: 'Tempo Traveller (7-12 pax)' };
-        return `Hello Goodwill Holidays!\n\nI would like to enquire about:\n\n• Service: ${bookingState.serviceLabel}\n• Destination: ${bookingState.destination || 'To be discussed'}${bookingState.pickup ? '\n• Pickup: ' + bookingState.pickup : ''}\n• Dates: ${formatDateRange()}\n• Guests: ${bookingState.guests}${bookingState.vehicle ? '\n• Vehicle: ' + (vehicleLabels[bookingState.vehicle] || bookingState.vehicle) : ''}\n\n• Name: ${bookingState.name}\n• Phone: ${bookingState.phone}${bookingState.email ? '\n• Email: ' + bookingState.email : ''}${bookingState.notes ? '\n\n• Notes: ' + bookingState.notes : ''}\n\nPlease share availability and pricing. Thank you!`;
+        return `Hello Goodwill Holidays!\n\nI would like to enquire about:\n\n• Service: ${bookingState.serviceLabel}\n• Destination: ${bookingState.destination || 'To be discussed'}${bookingState.pickup ? '\n• Pickup: ' + bookingState.pickup : ''}\n• Dates: ${formatDateRange()}\n• Guests: ${bookingState.guests}${bookingState.vehicle ? '\n• Vehicle: ' + (vehicleLabels[bookingState.vehicle] || bookingState.vehicle) : ''}\n\n• Name: ${bookingState.name}\n• Phone: ${bookingState.phone}${bookingState.notes ? '\n\n• Notes: ' + bookingState.notes : ''}\n\nPlease share availability and pricing. Thank you!`;
     }
 
     // ─── Airport Transfer Form ────────────────────────────────────────────────
